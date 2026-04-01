@@ -122,7 +122,13 @@ class HomeScreen extends StatelessWidget {
               );
             } else {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('No packs available! Watch an AD to refill.')),
+                const SnackBar(
+                  content: Text(
+                    'No packs available! Watch an AD to refill.',
+                    style: TextStyle(color: AppTheme.secondary, fontWeight: FontWeight.w900),
+                  ),
+                  backgroundColor: AppTheme.surfaceContainerHighest,
+                ),
               );
             }
           },
@@ -156,7 +162,7 @@ class HomeScreen extends StatelessWidget {
                 const SnackBar(
                   content: Text(
                     'Ad watched. 3 Packs added! (Simulation)',
-                    style: TextStyle(color: AppTheme.secondary, fontWeight: FontWeight.bold),
+                    style: TextStyle(color: AppTheme.secondary, fontWeight: FontWeight.w900),
                   ),
                   backgroundColor: AppTheme.surfaceContainerHighest,
                 ),

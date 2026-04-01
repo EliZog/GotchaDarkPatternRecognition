@@ -5,7 +5,7 @@ import 'home_screen.dart';
 import 'collection_screen.dart';
 import 'shop_screen.dart';
 import 'battle_screen.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import '../widgets/scythe_icon.dart';
 import '../theme/app_theme.dart';
 
 class MainLayout extends StatefulWidget {
@@ -80,7 +80,7 @@ class _MainLayoutState extends State<MainLayout> {
           foregroundColor: context.watch<GameState>().collection.length < 2 ? AppTheme.onSurfaceVariant : AppTheme.background,
           elevation: 8,
           shape: const CircleBorder(),
-          child: const FaIcon(FontAwesomeIcons.skullCrossbones, size: 24),
+          child: const ScythesIcon(size: 28, color: Colors.black),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,

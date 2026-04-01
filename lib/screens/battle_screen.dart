@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:math' as math;
 import '../providers/game_state.dart';
 import '../theme/app_theme.dart';
 import '../widgets/top_app_bar.dart';
+import '../widgets/scythe_icon.dart';
 import '../widgets/gacha_card_widget.dart';
 import '../models/card_model.dart';
 import 'dart:async';
@@ -43,7 +43,13 @@ class _BattleScreenState extends State<BattleScreen> {
       if (collection.length >= 2) {
         if (gameState.energy < 5) {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Not enough Energy to battle! (Need 5)'), backgroundColor: AppTheme.error),
+            const SnackBar(
+              content: Text(
+                'Not enough Energy to battle! (Need 5)',
+                style: TextStyle(color: AppTheme.secondary, fontWeight: FontWeight.w900),
+              ),
+              backgroundColor: AppTheme.surfaceContainerHighest,
+            ),
           );
           Navigator.pop(context);
           return;
@@ -283,7 +289,7 @@ class _BattleScreenState extends State<BattleScreen> {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const FaIcon(FontAwesomeIcons.skullCrossbones, color: AppTheme.secondary, size: 28),
+            const ScythesIcon(size: 28, color: AppTheme.secondary),
             const SizedBox(width: 16),
             const Text(
               "DRAFT PHASE",
