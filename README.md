@@ -15,4 +15,4 @@ This project is built with Flutter and uses `Provider` for state management.
 
 1. Ensure you have the Flutter SDK installed.
 2. Run `flutter pub get` to install dependencies.
-3. Use `flutter run` to launch the app on your preferred device.
+3. Use `flutter run -d chrome` to launch the app on chrome.
