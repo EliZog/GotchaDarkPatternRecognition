@@ -1,17 +1,18 @@
-# gotcha
+# Gotcha - Dark Pattern Recognition Game
 
-A new Flutter project.
+An educational Gacha card game designed to teach users about dark patterns in modern software through collection and strategy.
+
+## Key Features
+- **Gacha Collection**: Unlock and collect 20+ cards representing different dark patterns.
+- **Battle Mode**: Draft cards and compete in a turn-based arena against AI with side-by-side card layouts.
+- **Grim Reaper Theme**: Premium aesthetic featuring custom `ScythesIcon` animations and dark-mode UI.
+- **Educational Insights**: Learn about 'Sneaking', 'Forced Action', and other deceptive designs.
+- **Dynamic Energy System**: Participate in draft phases and battles using a stamina-based economy.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is built with Flutter and uses `Provider` for state management.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Ensure you have the Flutter SDK installed.
+2. Run `flutter pub get` to install dependencies.
+3. Use `flutter run` to launch the app on your preferred device.
