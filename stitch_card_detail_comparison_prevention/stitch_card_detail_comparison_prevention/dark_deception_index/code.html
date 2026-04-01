@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#c285ff",
+              "on-secondary-container": "#fff7e9",
+              "on-tertiary-fixed-variant": "#750e19",
+              "secondary": "#fed01b",
+              "on-surface-variant": "#a9a5de",
+              "secondary-fixed": "#fed01b",
+              "secondary-dim": "#eec200",
+              "on-tertiary-fixed": "#3a0005",
+              "on-secondary": "#594700",
+              "tertiary-dim": "#fb7373",
+              "surface-bright": "#26206c",
+              "primary-dim": "#9e41f5",
+              "tertiary": "#ff8887",
+              "on-primary": "#46007c",
+              "on-background": "#e6e2ff",
+              "secondary-container": "#735c00",
+              "primary-fixed": "#c285ff",
+              "on-secondary-fixed": "#433500",
+              "background": "#0a0538",
+              "surface-container-lowest": "#000000",
+              "surface-container-high": "#1a1456",
+              "on-primary-fixed": "#000000",
+              "surface-container-highest": "#201a61",
+              "tertiary-fixed": "#ff928f",
+              "error-dim": "#d73357",
+              "on-error": "#490013",
+              "outline-variant": "#454274",
+              "primary-fixed-dim": "#b871ff",
+              "on-tertiary": "#60000e",
+              "inverse-surface": "#fcf8ff",
+              "tertiary-container": "#fb7373",
+              "on-primary-container": "#360061",
+              "surface-dim": "#0a0538",
+              "surface-container-low": "#0e0841",
+              "error": "#ff6e84",
+              "surface-tint": "#cc97ff",
+              "on-secondary-fixed-variant": "#645000",
+              "inverse-on-surface": "#524f82",
+              "outline": "#7370a5",
+              "on-error-container": "#ffb2b9",
+              "secondary-fixed-dim": "#eec200",
+              "error-container": "#a70138",
+              "on-primary-fixed-variant": "#430077",
+              "tertiary-fixed-dim": "#ff7a7a",
+              "surface": "#0a0538",
+              "on-tertiary-container": "#490008",
+              "surface-variant": "#201a61",
+              "on-surface": "#e6e2ff",
+              "surface-container": "#140f4c",
+              "inverse-primary": "#8720de",
+              "primary": "#cc97ff"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(10, 5, 56, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .card-inner-glow {
+            box-shadow: inset 0 0 20px rgba(204, 151, 255, 0.2);
+        }
+        .gold-glow {
+            filter: drop-shadow(0 0 8px rgba(254, 208, 27, 0.5));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 py-4 max-w-md mx-auto bg-[#0a0538]/80 backdrop-blur-xl z-50 shadow-2xl shadow-purple-900/20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full border-2 border-primary overflow-hidden">
+<img alt="Player Avatar Level 24" class="w-full h-full object-cover" data-alt="Cyberpunk style user avatar level 24" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZDu1KxS-6a6VZyHEEYmOlcO8XuFfzLfbbgDW8vlECfjDxb3-OOTlAtga3SZINqz74vvLEskAjpTyMQW0WLlBrx9KYQf4fzLL49KK7GpRgiedjd8zPtOFOSSTeWhjpTZVSsR1dKjjuah_12llrX64kLBPjYqKPkf22lWiS0Csr30YGzlRl8zn9UekvDq0q9OiVTuro_rBjLK1nf4wnH9_YHZJMy42PNiQhy4I1l_7pzt_9GKB9qD2QWYhMcJfJWQ_VUFxxNgCeCAY"/>
+</div>
+<h1 class="font-headline font-bold text-xl uppercase tracking-tighter text-[#cc97ff]">
+<span class="text-[#fed01b] drop-shadow-[0_0_8px_rgba(254,208,27,0.5)] font-black">Dark</span> Deception Index
+            </h1>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-[#fed01b] font-headline font-black text-sm">1,250 Gold</span>
+<div class="bg-[#201a61] h-[2px] w-full self-end mt-1"></div>
+</div>
+</header>
+<main class="pt-24 px-4 max-w-md mx-auto">
+<!-- Collection Stats -->
+<div class="flex justify-between items-end mb-6">
+<div>
+<p class="text-on-surface-variant font-bold text-[10px] uppercase tracking-widest">Global Progress</p>
+<h2 class="font-headline text-3xl font-black text-primary italic">5/16 <span class="text-on-surface text-xl not-italic font-bold">Cards Found</span></h2>
+</div>
+<button class="bg-surface-container-highest p-3 rounded-xl border-b-4 border-surface-container-lowest active:translate-y-1 transition-all">
+<span class="material-symbols-outlined text-secondary">share</span>
+</button>
+</div>
+<!-- Progress Bar (Clash Style) -->
+<div class="w-full h-4 bg-surface-container-low rounded-full mb-8 overflow-hidden border-2 border-surface-container-highest">
+<div class="h-full bg-gradient-to-r from-primary-dim to-primary w-[31%] rounded-full shadow-[0_0_10px_rgba(204,151,255,0.4)]"></div>
+</div>
+<!-- Cards Grid -->
+<div class="grid grid-cols-2 gap-x-4 gap-y-10">
+<!-- Card 1: Selected State -->
+<div class="relative flex flex-col gap-3 group">
+<div class="bg-surface-container-highest rounded-xl border-b-4 border-surface-container-lowest overflow-hidden transition-transform duration-200 hover:-translate-y-1 card-inner-glow relative ring-2 ring-secondary">
+<div class="absolute top-0 right-0 bg-secondary text-on-secondary px-2 py-0.5 text-[10px] font-black uppercase rounded-bl-lg z-10">Legendary</div>
+<div class="p-4 aspect-[3/4] flex flex-col items-center justify-center relative bg-gradient-to-b from-surface-container-highest to-surface-container-high">
+<span class="material-symbols-outlined text-6xl text-secondary mb-2" style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
+<p class="text-center font-headline font-bold text-sm text-on-surface uppercase tracking-tighter">Gaslighting UI</p>
+</div>
+<div class="h-1 w-full bg-surface-container-lowest">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</div>
+<!-- Info Button (Visible for selected) -->
+<button class="w-full bg-secondary py-3 rounded-xl font-headline font-black text-on-secondary uppercase italic tracking-tighter text-lg shadow-[0_4px_0_#735c00] active:translate-y-1 active:shadow-none transition-all">
+                    INFO
+                </button>
+</div>
+<!-- Card 2: Rare -->
+<div class="relative flex flex-col gap-3 group">
+<div class="bg-surface-container-highest rounded-xl border-b-4 border-surface-container-lowest overflow-hidden transition-transform duration-200 hover:-translate-y-1 card-inner-glow relative">
+<div class="absolute top-0 right-0 bg-primary text-on-primary px-2 py-0.5 text-[10px] font-black uppercase rounded-bl-lg z-10">Rare</div>
+<div class="p-4 aspect-[3/4] flex flex-col items-center justify-center bg-gradient-to-b from-surface-container-highest to-surface-container-high">
+<span class="material-symbols-outlined text-6xl text-primary mb-2">visibility_off</span>
+<p class="text-center font-headline font-bold text-sm text-on-surface uppercase tracking-tighter">Hidden Costs</p>
+</div>
+<div class="h-1 w-full bg-surface-container-lowest">
+<div class="h-full bg-primary w-[60%]"></div>
+</div>
+</div>
+<div class="h-12 flex items-center justify-center">
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">LVL 4</p>
+</div>
+</div>
+<!-- Card 3: Uncommon -->
+<div class="relative flex flex-col gap-3 group">
+<div class="bg-surface-container-highest rounded-xl border-b-4 border-surface-container-lowest overflow-hidden transition-transform duration-200 hover:-translate-y-1 card-inner-glow relative">
+<div class="absolute top-0 right-0 bg-tertiary text-on-tertiary px-2 py-0.5 text-[10px] font-black uppercase rounded-bl-lg z-10">Uncommon</div>
+<div class="p-4 aspect-[3/4] flex flex-col items-center justify-center bg-gradient-to-b from-surface-container-highest to-surface-container-high">
+<span class="material-symbols-outlined text-6xl text-tertiary mb-2">notification_important</span>
+<p class="text-center font-headline font-bold text-sm text-on-surface uppercase tracking-tighter">Nagging Popups</p>
+</div>
+<div class="h-1 w-full bg-surface-container-lowest">
+<div class="h-full bg-tertiary w-[80%]"></div>
+</div>
+</div>
+<div class="h-12 flex items-center justify-center">
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">LVL 7</p>
+</div>
+</div>
+<!-- Card 4: Locked/Ghost State -->
+<div class="relative flex flex-col gap-3 group opacity-50 grayscale">
+<div class="bg-surface-container-low rounded-xl border-b-4 border-surface-container-lowest overflow-hidden relative">
+<div class="p-4 aspect-[3/4] flex flex-col items-center justify-center bg-surface-container-high">
+<span class="material-symbols-outlined text-6xl text-on-surface-variant mb-2">lock</span>
+<p class="text-center font-headline font-bold text-sm text-on-surface-variant uppercase tracking-tighter">Dark Lobby</p>
+</div>
+<div class="h-1 w-full bg-surface-container-lowest">
+<div class="h-full bg-on-surface-variant w-[0%]"></div>
+</div>
+</div>
+<div class="h-12 flex items-center justify-center">
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">Locked</p>
+</div>
+</div>
+<!-- Card 5: Common -->
+<div class="relative flex flex-col gap-3 group">
+<div class="bg-surface-container-highest rounded-xl border-b-4 border-surface-container-lowest overflow-hidden transition-transform duration-200 hover:-translate-y-1 card-inner-glow relative">
+<div class="absolute top-0 right-0 bg-on-surface-variant text-surface px-2 py-0.5 text-[10px] font-black uppercase rounded-bl-lg z-10">Common</div>
+<div class="p-4 aspect-[3/4] flex flex-col items-center justify-center bg-gradient-to-b from-surface-container-highest to-surface-container-high">
+<span class="material-symbols-outlined text-6xl text-on-surface-variant mb-2">shopping_basket</span>
+<p class="text-center font-headline font-bold text-sm text-on-surface uppercase tracking-tighter">Sneak Basket</p>
+</div>
+<div class="h-1 w-full bg-surface-container-lowest">
+<div class="h-full bg-on-surface-variant w-full"></div>
+</div>
+</div>
+<div class="h-12 flex items-center justify-center">
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">MAXED</p>
+</div>
+</div>
+<!-- Card 6: Rare -->
+<div class="relative flex flex-col gap-3 group">
+<div class="bg-surface-container-highest rounded-xl border-b-4 border-surface-container-lowest overflow-hidden transition-transform duration-200 hover:-translate-y-1 card-inner-glow relative">
+<div class="absolute top-0 right-0 bg-primary text-on-primary px-2 py-0.5 text-[10px] font-black uppercase rounded-bl-lg z-10">Rare</div>
+<div class="p-4 aspect-[3/4] flex flex-col items-center justify-center bg-gradient-to-b from-surface-container-highest to-surface-container-high">
+<span class="material-symbols-outlined text-6xl text-primary mb-2" style="font-variation-settings: 'FILL' 1;">timer_off</span>
+<p class="text-center font-headline font-bold text-sm text-on-surface uppercase tracking-tighter">False Urgency</p>
+</div>
+<div class="h-1 w-full bg-surface-container-lowest">
+<div class="h-full bg-primary w-[25%]"></div>
+</div>
+</div>
+<div class="h-12 flex items-center justify-center">
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">LVL 2</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#0a0538]/90 backdrop-blur-lg border-t-4 border-[#201a61] shadow-[0_-10px_30px_rgba(10,5,56,0.8)]">
+<a class="flex flex-col items-center justify-center text-[#454274] hover:text-[#cc97ff] active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined text-2xl">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#454274] hover:text-[#cc97ff] active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined text-2xl">style</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#fed01b] scale-125 transition-transform duration-200 drop-shadow-[0_0_10px_rgba(254,208,27,0.4)] active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase">Collection</span>
+</a>
+</nav>
+</body></html>

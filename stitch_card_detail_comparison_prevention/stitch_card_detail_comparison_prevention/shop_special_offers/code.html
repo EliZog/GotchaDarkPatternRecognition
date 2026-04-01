@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-dim": "#9e41f5",
+              "on-surface-variant": "#a9a5de",
+              "on-error-container": "#ffb2b9",
+              "secondary-dim": "#eec200",
+              "surface-container-low": "#0e0841",
+              "tertiary-dim": "#fb7373",
+              "on-tertiary-container": "#490008",
+              "surface-dim": "#0a0538",
+              "primary-fixed-dim": "#b871ff",
+              "on-tertiary-fixed-variant": "#750e19",
+              "tertiary-container": "#fb7373",
+              "tertiary": "#ff8887",
+              "surface-container-high": "#1a1456",
+              "tertiary-fixed-dim": "#ff7a7a",
+              "inverse-on-surface": "#524f82",
+              "surface-tint": "#cc97ff",
+              "on-background": "#e6e2ff",
+              "inverse-primary": "#8720de",
+              "on-primary-fixed-variant": "#430077",
+              "surface": "#0a0538",
+              "on-secondary-fixed-variant": "#645000",
+              "error": "#ff6e84",
+              "error-dim": "#d73357",
+              "tertiary-fixed": "#ff928f",
+              "on-secondary-container": "#fff7e9",
+              "on-tertiary": "#60000e",
+              "secondary": "#fed01b",
+              "surface-container-highest": "#201a61",
+              "on-surface": "#e6e2ff",
+              "secondary-fixed-dim": "#eec200",
+              "background": "#0a0538",
+              "on-secondary-fixed": "#433500",
+              "primary-fixed": "#c285ff",
+              "error-container": "#a70138",
+              "surface-bright": "#26206c",
+              "primary-container": "#c285ff",
+              "outline": "#7370a5",
+              "surface-container": "#140f4c",
+              "primary": "#cc97ff",
+              "secondary-fixed": "#fed01b",
+              "inverse-surface": "#fcf8ff",
+              "on-primary": "#46007c",
+              "on-tertiary-fixed": "#3a0005",
+              "surface-container-lowest": "#000000",
+              "on-primary-fixed": "#000000",
+              "secondary-container": "#735c00",
+              "on-secondary": "#594700",
+              "on-error": "#490013",
+              "outline-variant": "#454274",
+              "surface-variant": "#201a61",
+              "on-primary-container": "#360061"
+            },
+            fontFamily: {
+              "headline": ["Epilogue"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .chunky-shadow-primary {
+            box-shadow: 0 4px 0 0 #360061;
+        }
+        .chunky-shadow-secondary {
+            box-shadow: 0 4px 0 0 #735c00;
+        }
+        .chunky-shadow-error {
+            box-shadow: 0 4px 0 0 #490013;
+        }
+        .inner-glow-gold {
+            box-shadow: inset 0 0 15px rgba(254, 208, 27, 0.3);
+        }
+        .rarity-gradient {
+            background: linear-gradient(135deg, #201a61 0%, #0a0538 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-6 py-4 max-w-md mx-auto bg-[#0a0538]/80 backdrop-blur-xl z-50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest border-2 border-primary flex items-center justify-center overflow-hidden">
+<img alt="Player Avatar Level 24" class="w-full h-full object-cover" data-alt="Pixel art avatar of a player character" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqO1yZbk_Zqj9VWwp3IZKSBsllJYGitMqmboMsKQ2RWFPUJYGJ-HCfdkcKaeL8kNEiOaE_lIjzQUkbSSSXfBD-_JUSqeNR0JjGo0Lc1TJ92LXCG_I8MYa-YttPff7oeXPLJbtDiESADNf1IPHJ6FlpvbCMp1DA1NId4O2WpH8TSW77Qu_GqU2LTmfDr4f-evzl3hDGHe_SFijcoqWlnefBxqPotkojSdPqo7idPSdFQQZsjkJzOeuJerzxtcVXvsK9hzqjtWnxeME"/>
+</div>
+<h1 class="font-['Epilogue'] font-bold text-xl uppercase tracking-tighter text-[#cc97ff]">7/10 Packs</h1>
+</div>
+<button class="bg-surface-container-highest px-4 py-2 rounded-xl flex items-center gap-2 active:translate-y-1 transition-transform duration-75 hover:brightness-110">
+<span class="material-symbols-outlined text-[#fed01b] drop-shadow-[0_0_8px_rgba(254,208,27,0.5)] font-black" data-icon="payments">payments</span>
+<span class="font-['Epilogue'] font-bold text-xl uppercase tracking-tighter text-[#fed01b]">1,250 Gold</span>
+</button>
+<div class="absolute bottom-0 left-0 bg-[#201a61] h-[2px] w-full self-end"></div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-md mx-auto space-y-8">
+<!-- Premium Subscription Banner -->
+<section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-surface-container-highest to-surface-container-low border-l-4 border-secondary p-6 shadow-2xl">
+<div class="absolute -right-4 -top-4 opacity-20">
+<span class="material-symbols-outlined text-[120px]" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="relative z-10 space-y-4">
+<div class="space-y-1">
+<span class="text-secondary font-headline text-xs font-black uppercase tracking-[0.2em]">Void Membership</span>
+<h2 class="text-2xl font-headline font-extrabold text-on-surface leading-tight">Join the Dark Side</h2>
+</div>
+<p class="text-on-surface-variant text-sm font-medium">Unlock daily dark packs, 2x gold multipliers, and exclusive eldritch skins.</p>
+<button class="w-full py-4 bg-secondary text-on-secondary font-headline font-black uppercase tracking-widest rounded-xl chunky-shadow-secondary active:translate-y-1 transition-all hover:brightness-110">
+                    Claim Power
+                </button>
+</div>
+</section>
+<!-- Limited Time Offer -->
+<section class="space-y-4">
+<div class="flex justify-between items-end px-1">
+<h3 class="font-headline font-bold text-lg text-primary uppercase tracking-tighter">Flash Deals</h3>
+<div class="flex items-center gap-2 text-error animate-pulse">
+<span class="material-symbols-outlined text-sm" data-icon="alarm">alarm</span>
+<span class="font-headline text-xs font-black">ENDS IN: 04:59:12</span>
+</div>
+</div>
+<div class="relative group bg-surface-container-highest rounded-2xl p-5 border border-error/20 overflow-hidden">
+<div class="absolute top-0 right-0 bg-error text-on-error px-4 py-1 font-headline font-black text-[10px] uppercase rounded-bl-xl z-20">80% Value</div>
+<div class="flex gap-4 items-center">
+<div class="w-24 h-24 flex-shrink-0 bg-surface-dim rounded-xl flex items-center justify-center relative border border-outline-variant/30">
+<span class="material-symbols-outlined text-5xl text-error drop-shadow-[0_0_15px_rgba(255,110,132,0.4)]" data-icon="mystery_beacon" style="font-variation-settings: 'FILL' 1;">mystery</span>
+</div>
+<div class="flex-1 space-y-2">
+<h4 class="font-headline font-bold text-on-surface text-lg leading-none">Gacha Starter Kit</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">5 Mystic Pulls + 500 Dark Matter. One-time purchase only!</p>
+<button class="w-full mt-2 py-2 bg-gradient-to-r from-error-dim to-error text-on-error font-headline font-black uppercase text-sm rounded-lg chunky-shadow-error active:translate-y-1 transition-all">
+                            $4.99
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Special Packs Grid (Bento Style) -->
+<section class="space-y-4">
+<h3 class="font-headline font-bold text-lg text-primary uppercase tracking-tighter px-1">Elite Collection</h3>
+<div class="grid grid-cols-2 gap-4">
+<!-- Elite Dark Pack (PRESELECTED) -->
+<div class="col-span-2 relative bg-surface-container-highest rounded-3xl p-6 border-2 border-secondary inner-glow-gold">
+<div class="absolute -right-2 top-1/2 -translate-y-1/2 opacity-10">
+<span class="material-symbols-outlined text-[140px]" data-icon="playing_cards">playing_cards</span>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-4">
+<div class="relative">
+<span class="material-symbols-outlined text-8xl text-secondary drop-shadow-[0_0_25px_rgba(254,208,27,0.6)]" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<div class="absolute -top-2 -right-2 bg-primary text-on-primary text-[10px] font-black px-2 py-1 rounded-full uppercase tracking-tighter">Recommended</div>
+</div>
+<div>
+<h4 class="font-headline font-black text-2xl text-on-surface uppercase italic tracking-tighter">Elite Dark Pack</h4>
+<p class="text-xs text-secondary-dim font-bold uppercase tracking-widest mt-1">Guaranteed Legendary</p>
+</div>
+<button class="w-full py-4 bg-gradient-to-b from-primary-dim to-primary text-on-primary font-headline font-black uppercase text-lg rounded-2xl chunky-shadow-primary active:translate-y-1 transition-all">
+                            2,500 Gold
+                        </button>
+</div>
+</div>
+<!-- Shadow Booster -->
+<div class="bg-surface-container-highest rounded-2xl p-4 flex flex-col items-center text-center space-y-3 border border-outline-variant/20 hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="tempest">storm</span>
+<div class="space-y-1">
+<h4 class="font-headline font-bold text-on-surface text-sm uppercase">Shadow Booster</h4>
+<p class="text-[10px] text-on-surface-variant">3 Cards • 20% Epic Chance</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high border border-outline-variant text-primary font-headline font-black uppercase text-xs rounded-xl active:translate-y-0.5 transition-all">
+                        500 Gold
+                    </button>
+</div>
+<!-- Cursed Artifact -->
+<div class="bg-surface-container-highest rounded-2xl p-4 flex flex-col items-center text-center space-y-3 border border-outline-variant/20 hover:border-tertiary/40 transition-colors">
+<span class="material-symbols-outlined text-5xl text-tertiary" data-icon="skull">skull</span>
+<div class="space-y-1">
+<h4 class="font-headline font-bold text-on-surface text-sm uppercase">Cursed Cache</h4>
+<p class="text-[10px] text-on-surface-variant">Rare Upgrade Materials</p>
+</div>
+<button class="w-full py-2 bg-surface-container-high border border-outline-variant text-tertiary font-headline font-black uppercase text-xs rounded-xl active:translate-y-0.5 transition-all">
+                        850 Gold
+                    </button>
+</div>
+</div>
+</section>
+<!-- Extra Rewards Info -->
+<div class="bg-surface-container-low p-4 rounded-xl border-t border-outline-variant/10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed" data-icon="info">info</span>
+<p class="text-[10px] text-on-surface-variant leading-snug">All pack odds are audited by the Void Council. Pity timer active: 5 more Elite Dark Packs for a Guaranteed Mythic card.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#0a0538]/90 backdrop-blur-lg rounded-t-[2rem] border-t-4 border-[#201a61] shadow-[0_-10px_30px_rgba(10,5,56,0.8)]">
+<!-- Shop Active -->
+<a class="flex flex-col items-center justify-center text-[#fed01b] scale-125 transition-transform duration-200 drop-shadow-[0_0_10px_rgba(254,208,27,0.4)]" href="#">
+<span class="material-symbols-outlined" data-icon="storefront" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase">Shop</span>
+</a>
+<!-- Home Inactive -->
+<a class="flex flex-col items-center justify-center text-[#454274] hover:text-[#cc97ff] active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="style">style</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase">Home</span>
+</a>
+<!-- Collection Inactive -->
+<a class="flex flex-col items-center justify-center text-[#454274] hover:text-[#cc97ff] active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase">Collection</span>
+</a>
+</nav>
+<!-- Background Decoration -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-30 overflow-hidden">
+<div class="absolute top-1/4 -left-20 w-80 h-80 bg-primary/20 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-1/4 -right-20 w-80 h-80 bg-secondary/10 rounded-full blur-[100px]"></div>
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')] opacity-10"></div>
+</div>
+</body></html>
